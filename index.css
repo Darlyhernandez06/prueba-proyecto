@@ -213,6 +213,10 @@ li .dropdown-item:active {
 }
 
 .form__group {
+    display: flex; /* Mostrar como flexbox */
+    flex-direction: column;
+    justify-content: center; /* Justificar contenido al centro */
+    height: 100px; /* Altura específica */
     margin-bottom: 40px; /* Espacio inferior de 40 píxeles */
 }
 
@@ -562,7 +566,7 @@ li .dropdown-item:active {
 
 
 /*RESPONSIVE*/
-@media (min-width: 700px) and (max-width: 1023px){
+@media (min-width: 768px) and (max-width: 1023px){
     .esconder{
         display: none;
         width: 50%;
@@ -616,14 +620,14 @@ li .dropdown-item:active {
 
 /*RESPONSIVE*/
 /* Media query para pantallas pequeñas como móviles */
-@media (max-width: 600px) {
+@media (min-width: 500px) and (max-width: 767px) {
     .form {
         flex-direction: column; /* Cambia a dirección de columna para móviles */
     }
 
-    .form__input {
+    .form__group {
         width: auto; /* Ancho automático para ajustar al contenido */
-        min-width: 560px;
+        min-width: auto;
         min-height: 40px; /* Altura mínima reducida para móviles */
     }
     .esconder{
@@ -634,16 +638,15 @@ li .dropdown-item:active {
         justify-content: center;
     }
     .bienvenidos__title{
-        font-size: 60px;
+        font-size: 50px;
         margin-top: 20px;
     }
     .bienvenidos__subtitle{
-        font-size: 45px;
+        font-size: 40px;
         margin-top: -20px;
     }
     .bienvenidos {
         /* Estilos del contenedor principal de bienvenida */
-
         max-width: 90%; /* Ancho máximo del contenedor */
         border-radius: 20px; /* Radio del borde */
         margin-top: 70px; /* Margen superior específico */
