@@ -562,7 +562,7 @@ li .dropdown-item:active {
 
 
 /*RESPONSIVE*/
-@media (min-width: 768px) and (max-width: 1023px){
+@media (min-width: 700px) and (max-width: 1023px){
     .esconder{
         display: none;
         width: 50%;
@@ -616,7 +616,7 @@ li .dropdown-item:active {
 
 /*RESPONSIVE*/
 /* Media query para pantallas pequeñas como móviles */
-@media (max-width: 767px) {
+@media (max-width: 600px) {
     .form {
         flex-direction: column; /* Cambia a dirección de columna para móviles */
     }
